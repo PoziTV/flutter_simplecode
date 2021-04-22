@@ -110,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              'Оценка этого проекта:',
             ),
             Text(
               '$_counter',
@@ -127,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
       persistentFooterButtons: <Widget>[
         IconButton(
           icon: Icon(
-            Icons.add_circle,
+            Icons.thumb_up,
             color: _FooterButtonAddColor,
           ),
           iconSize: _FooterButtonsSize,
@@ -135,7 +135,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         IconButton(
           icon: Icon(
-            Icons.remove_circle,
+            Icons.thumb_down,
             color: _FooterButtonRemoveColor,
           ),
           iconSize: _FooterButtonsSize,
