@@ -46,6 +46,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
   int _counter = 0;
 
   void _incrementCounter() {
@@ -78,9 +79,9 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
-    const double FooterButtonsSize = 60;
-    const Color FooterButtonRemoveColor = Colors.red;
-    const Color FooterButtonAddColor = Colors.green;
+    const double _FooterButtonsSize = 60;
+    const Color _FooterButtonRemoveColor = Colors.red;
+    const Color _FooterButtonAddColor = Colors.green;
 
     return Scaffold(
       appBar: AppBar(
@@ -127,17 +128,17 @@ class _MyHomePageState extends State<MyHomePage> {
         IconButton(
           icon: Icon(
             Icons.add_circle,
-            color: FooterButtonAddColor,
+            color: _FooterButtonAddColor,
           ),
-          iconSize: FooterButtonsSize,
+          iconSize: _FooterButtonsSize,
           onPressed: _incrementCounter,
         ),
         IconButton(
           icon: Icon(
             Icons.remove_circle,
-            color: FooterButtonRemoveColor,
+            color: _FooterButtonRemoveColor,
           ),
-          iconSize: FooterButtonsSize,
+          iconSize: _FooterButtonsSize,
           onPressed: _decrementCounter,
         ),
       ],
