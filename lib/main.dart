@@ -79,6 +79,9 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     const double FooterButtonsSize = 60;
+    const Color FooterButtonRemoveColor = Colors.red;
+    const Color FooterButtonAddColor = Colors.green;
+
     return Scaffold(
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
@@ -124,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
         IconButton(
           icon: Icon(
             Icons.add_circle,
-            color: Colors.green,
+            color: FooterButtonAddColor,
           ),
           iconSize: FooterButtonsSize,
           onPressed: _incrementCounter,
@@ -132,7 +135,7 @@ class _MyHomePageState extends State<MyHomePage> {
         IconButton(
           icon: Icon(
             Icons.remove_circle,
-            color: Colors.red,
+            color: FooterButtonRemoveColor,
           ),
           iconSize: FooterButtonsSize,
           onPressed: _decrementCounter,
